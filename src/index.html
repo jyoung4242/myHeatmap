@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Heat Map</title>
+    </head>
+    <body>
+        <div id="inputfields">
+            <label for="commandSelect">Select Command</label>
+            <select id="commandSelect">
+                <option value="City/Country">City/Country</option>
+                <option value="City/State/US">City/State/US</option>
+                <option value="Zip/Country">Zip/Country</option>
+            </select>
+            <label for="City">City</label>
+            <input type="text" id="City" disabled />
+            <label for="State">State</label>
+            <input type="text" id="State" disabled />
+            <label for="Country">Country</label>
+            <input type="text" id="Country" disabled />
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" disabled />
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <div>
+            <canvas id="cnv" width="1200" height="1200"></canvas>
+        </div>
+    </body>
+</html>
